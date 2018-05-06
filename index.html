@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Apache Tomcat 7</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<nav>
+	<ul>
+	    <li><a title="" href="glassfish.html">glassfish</a></li>
+	    <li><a title="Opcion 3" href="#">Opción 3</a></li>
+	    <li><a title="Opcion 4" href="#">Opción 4</a></li>
+	    <li><a title="Opcion 5" href="#">Opción 5</a></li>
+	</ul>
+</nav>
+<marquee>
+	<h1><b>Instalación y configuración de Apache Tomcat 7 en Windows</b></h1>
+</marquee><br>
+	<center> <img src="https://blogdeaitor.files.wordpress.com/2011/11/logo-apache-tomcat.png"></center><br>
+	<section>
+		<article>
+		<h3><b>PASOS PREVIOS</b></h3>
+		 <p>Tener instalado un JAVA SE DEVELOPMENT KIT (JDK) y tener correctament configurado la variable de entorno JAVA_HOME.</p><br>
+	<h3><b>PASO 1</b></h3>
+		<p>Lo primero que haremos es bajar nuestra versión windows zip de Apache Tomcat  7 (al momento de escribir esta entrada, esta la versión 7.0.40)  de la siguiente dirección: http://tomcat.apache.org/download-70.cgi</p><br>
+		<center><img src="https://4.bp.blogspot.com/-EFjVaF6EdH0/UaGRkkdb_oI/AAAAAAAAAVY/IzvM7Ooevsk/s400/Instalando+y+configurando+manual+de+Apache+Tomcat+7+01.jpg"></center><br>
+	<h3><b>PASO 2</b></h3>
+		<p>En el apartado Quick Navigation damos click en el link que dice 7.0.40 (esta es la versión al momento de realizar esta entrada) y nos mueve a un apartado dentro de la misma página a como se muestra en la siguiente imagen:</p><br>
+		<center><img src="https://1.bp.blogspot.com/-a28Ua_TjWbk/UaGR7Af4STI/AAAAAAAAAVg/XWcZwAjdHLo/s400/Instalando+y+configurando+manual+de+Apache+Tomcat+7+02.jpg"></center>
+	<h3><b>PASO 3</b></h3>
+	<p>Dependiendo de la arquitectura de nuestro sistema operativo, si tenemos un sistemas de 32 bits haremos click en 32-bit Windows zip, o si de lo contrario tenemos uno de 64 bits haremos click en 64-bit Windows zip, en mi caso descargo las versión de 32 bits a como se muestra en la siguiente imagen: </p><br>
+		<center><img src="https://2.bp.blogspot.com/-PkV8AblfAP0/UaGSFl-odgI/AAAAAAAAAVo/MegSWQJagLU/s320/Instalando+y+configurando+manual+de+Apache+Tomcat+7+03.jpg"></center><br>
+		<h3><b>PASO 4</b></h3>
+		<p>Dependiendo del directorio donde hayan descargado el windows zip de Tomcat, el siguiente paso es descomprimir el archivo zip. Para esta entrada, yo procederé a descomprimirlo en raíz de C:, como se muestra en la siguiente imagen:</p><br>
+		<center><img src="https://4.bp.blogspot.com/-PRv4Zv8qzAg/UaGSwP_FskI/AAAAAAAAAV4/GCyASJdup10/s400/Instalando+y+configurando+manual+de+Apache+Tomcat+7+04.jpg"></center><br>
+		<h3><b>PAO 5</b></h3>
+		<p>El siguiente paso sera crear la variable de entorno CATALINA_HOME y editar las variables CLASSPATH y Path, para realizar esto hacemos click derecho sobre Equipo y luego sobre Propiedades.</p><br>
+		<center><img src="https://3.bp.blogspot.com/-4DYQIIQqor8/UY7PWfzNI9I/AAAAAAAAAMo/ERpcVbZcqq8/s320/Instalaci%25C3%25B3n+y+configuraci%25C3%25B3n+del+JDK+7+11.jpg"></center><br>
+		<h3><b>PASO 6</b></h3>
+		<p>Se nos mostrara la ventana Ver información básica acerca del sistema, del lado izquierdo de la ventana hacemos click sobre Configuración avanzada del sistema. </p><br>
+		<center><img src="https://4.bp.blogspot.com/-0a4aLMTrcus/UY7QRac5jtI/AAAAAAAAAM0/EUQ5JZ22lwo/s400/Instalaci%25C3%25B3n+y+configuraci%25C3%25B3n+del+JDK+7+12.jpg"></center><br>
+		<h3><b>PASO 7</b></h3>
+		<p>Se nos mostrara la ventana Propiedades del sistema, nos ubicaremos en la pestaña  Opciones avanzadas y daremos click en el botón Variables de entorno.</p><br>
+		<center><img src="https://2.bp.blogspot.com/-vKDU2MN_2-k/UY7RzWqPyTI/AAAAAAAAANI/pOYnKH0tIyY/s400/Instalaci%25C3%25B3n+y+configuraci%25C3%25B3n+del+JDK+7+13.jpg"></center><br>
+		<h3><b>PASO 8</b></h3>
+		<p>Se nos mostrara la ventana Variables de entorno, desde el apartado Variables del sistema daremos de alta nuestra variable CATALINA_HOME, para esto hacemos click en el botón Nueva ...
+</p><br>
+		<center><img src="https://4.bp.blogspot.com/-NyNC6Fyd0rA/UY7S0wCvhYI/AAAAAAAAANU/mYE-5r2pqF0/s400/Instalaci%25C3%25B3n+y+configuraci%25C3%25B3n+del+JDK+7+14.jpg"></center><br>
+		<h3><b>PASO 9</b></h3>
+		<p>Se nos mostrara la ventana Nueva variable del sistema, en el campo Nombre de la variable ingresamos el texto CATALINA_HOME, y sobre el campo Valor de la variable ingresamos la ruta del Paso 4 que para este caso seria C:\apache-tomcat-7.0.40 . Damos en el botón Aceptar .
+</p><br>
+		<center><img src="https://1.bp.blogspot.com/-PXwd_au7XIQ/UaGTD0R3yqI/AAAAAAAAAWA/UYiGfdlzpwo/s400/Instalando+y+configurando+manual+de+Apache+Tomcat+7+05.jpg"></center><br>
+		<h3><b>PASO 10</b></h3>
+		<p>Se nos mostrara de nuevo la ventana del Paso 8 (Variables de entorno), desde aquí editaremos la variable de entorno CLASSPATH , para realizar esto desde el apartado Variables del sistema, buscamos la variable CLASSPATH , la seleccionados y damos click en el botón Editar ...</p><br>
+		<center><img src="https://1.bp.blogspot.com/-mf7CKhHYq2A/UaGUhqyrK-I/AAAAAAAAAWU/wTKDOkwJPYM/s400/Instalando+y+configurando+manual+de+Apache+Tomcat+7+05+-+01.jpg"></center><br>
+		<h3><b>PASO 11</b></h3>
+		<p>Se nos mostrara la ventana Editar la variable del sistema, y nos mostrara los valores actuales de la variable CLASSPATH, nos ubicamos en el campo Valor de la variable y nos desplazamos hasta el final, luego colocamos un punto y coma e ingresamos el texto %CATALINA_HOME%\lib\servlet-api.jar; 
+No cerrar aun la ventana.</p><br>
+		<center><img src="https://3.bp.blogspot.com/-iZnyCvaODB0/UY70MPgdifI/AAAAAAAAAQg/VlmTQswhDI8/s400/Instalando+y+configurando+manual+de+Apache+Tomcat+7+06.jpg"></center><br>
+		<h3><b>PASO 12</b></h3>
+		<p>Sin haber cerrado la ventana Editar la variable del sistema, después de haber ingresado al final el texto %CATALINA_HOME%\lib\servlet-api.jar; , ahora ingresamoss el texto %CATALINA_HOME%\lib\jsp-api.jar; . Después de haber agregado estos dos valores a la variable CLASSPATH, damos click en el botón Aceptar para que se guarden estos nuestros valores.</p><br>
+		<center><img src="https://1.bp.blogspot.com/-mevgl4iH72w/UY71LGze1bI/AAAAAAAAAQs/Mxn5yIU0b1s/s320/Instalando+y+configurando+manual+de+Apache+Tomcat+7+07.jpg"></center><br>
+		<h3><b>PASO 13</b></h3>
+		<p>Se nos mostrara de nuevo la ventana del Paso 8 y 10 (Variables de entorno), en el apartado Variables del sistema buscamos la variable de entorno Path, la seleccionamos y damos click en el botón Editar ...
+ </p><br>
+		<center><img src="https://1.bp.blogspot.com/-XdPLzd-DSUk/UY72VM8R7SI/AAAAAAAAAQ4/jlz3F3jFKnc/s400/Instalando+y+configurando+manual+de+Apache+Tomcat+7+08+-01.jpg"></center><br>
+		<h3><b>PASO 14</b></h3>
+		<p>Se nos mostrara nuevamente la ventana Editar la variable del sistema con los valores de la variable Path, aquí nos ubicaremos sobre el campo Valor de la variable, nos desplazaremos hasta el final del valor y colocaremos un punto y coma he ingresaremos el texto %CATALINA_HOME%\bin . Note que al final del valor de la variable Path quedo sin punto y coma. Damos click en el botón Aceptar.</p><br>
+		<center><img src="https://1.bp.blogspot.com/-ui1iRlqabfY/UY74CBV1H0I/AAAAAAAAARM/jpL1qPpUnr4/s400/Instalando+y+configurando+manual+de+Apache+Tomcat+7+08.jpg"></center><br>
+		<h3>PASO 15</h3>
+		<p>Se nos regresara a la ventana Variables de entorno, aquí hacemos click sobre el botón Aceptar. Ahora se mostrara la ventana Propiedades del sistema, hacemos click sobre el botón Aceptar también. Hasta aqui han quedado configuradas las variables necesarias pata ejecutar Tomcat.</p><br>
+		<h3>PASO 16</h3>
+		<p>El siguiente paso consiste en ejecutar tomcat y probar su funciona miento, para esto abrimos el Command Prompt de Windows.
+</p><br>
+		<center><img src="https://2.bp.blogspot.com/-hNSV_UMYJok/UX08s5Rpn5I/AAAAAAAAAFs/z0oyiw1Fld8/s400/Creando+un+archivo+WAR+a+mano+desde+el+directorio+expandido+02.jpg"></center><br>
+		<h3>PASO 17</h3>
+		<p>Sobre el Command Prompt de Windows ingresamo lo siguiente %CATALINA_HOME%\bin\startup.bat y damos [ENTER]. La primera vez nos preguntara el Firewall de Windows si deseamos darle acceso al Tomcat, le decimos que permita el acceso.</p><br>
+		<center><img src="https://1.bp.blogspot.com/-Et1--Xpu-IU/UaGVrqpt4wI/AAAAAAAAAWg/KsAO4_t5Q9k/s400/Instalando+y+configurando+manual+de+Apache+Tomcat+7+09.jpg"></center><br>
+		<h3>PASO 18</h3>
+		<p>Se despliega la ventana llamada Tomcat, donde nos informa que el servidor Tomcat ha iniciado correctamente.</p><br>
+		<center><img src="https://2.bp.blogspot.com/-N7y74oUd4ws/UaGV55X_j5I/AAAAAAAAAWo/EXRd0fJrN0U/s400/Instalando+y+configurando+manual+de+Apache+Tomcat+7+10.jpg"></center><br>
+		<h3>PASO 19</h3>
+		<p>Ahora el paso final consiste en abrir nuestro navegador favorito (yo use Firefox) y tecleamos en la barra de direcciones http://localhost:8080 y se mostrara la ventana Apache Tomcat/7.0.40  al cual nos muestra la pantalla de bienvenida de Apache Tomcat, esto quiere decir que todo se ha configurado exitosamente.</p><br>
+		<center><img src="https://2.bp.blogspot.com/-ocMMmCgm91U/UaGWFhPHXiI/AAAAAAAAAWw/dvtvPSXBVfQ/s400/Instalando+y+configurando+manual+de+Apache+Tomcat+7+11.jpg"></center><br>
+		<h1><b><center>¿Cómo integrar el servidor Apache Tomcat al Eclipse?</center></b></h1><br>
+		<p>Primero debemos estar seguro que tenemos un version de eclipse para Java EE. Como ver la version de eclipse</p>
+
+<p>En el caso de no tenerla debemos bajar desde la pagina oficial de eclipse, recordar la versión a bajar debe ser Eclipse IDE for Java EE Developers</p> 
+
+<p>Descargamos y descomprimimos el zip de la versión del core (Link para bajarlo) del tomcat que queremos instalar. En nuestro caso va a ser el Tomcat 7.</p>
+
+<p>Una vez cumplido con los requisitos ya podemos empezar.</p><br>
+<p>1) Ir hacia Windows -> Preferences </p><br>
+<center><img src="http://2.bp.blogspot.com/-q9rZQVHo6Bg/UHS-tZztWnI/AAAAAAAAAaI/j7sTrhW4CEc/s1600/00.jpg"></center><br>
+<p>2) Seleccionamos Server -> Runtime Environments  y presionamos clic en Add..
+</p><br>
+<center><img src="http://3.bp.blogspot.com/-dpbaJKeE4AU/Ua1XlhM4fdI/AAAAAAAAApo/lCNKejuLLWs/s1600/00.jpg"></center><br>
+<p>3) Seleccionamos nuestro Apache Tomcat (Version Apache Tomcat v7.0 en nuestro caso), hacemos clic en Next.</p><br>
+<center><img src="http://2.bp.blogspot.com/-OThYFRUQxIg/Ua1en7ikp7I/AAAAAAAAAp0/Vau66GuOR6g/s1600/01.jpg"></center><br>
+<p>4) Finalmente  aparecerá lo siguiente:</p><br>
+<center><img src="http://2.bp.blogspot.com/-jcJL9D6FOg0/Ua1ltz1WWAI/AAAAAAAAAqA/BpQeY5RfrME/s1600/02.jpg"></center><br>
+<ul>
+	<p><li type="circle">Es el nombre que le asignaremos a nuestro servidor.</li></p>
+	<p><li type="circle">Es el directorio donde está ubicado nuestro servidor.</li></p>
+	<p><li type="circle">Es el JDK que vamos a utilizar.</li></p>
+	<p><li type="circle">En podemos buscar nuestro Tomcat.</li></p>
+	<p><li type="circle">Podemos buscar el JDK que utilizamos.</li></p>
+</ul><br>
+<p>Presionamos Finish y ya tenemos integra el nuestro servidor Tomcat al Eclipse.</p><br>
+<h2><b>¿Como agregar una vista de los Servidores?</b></h2>
+<p>Esto es muy facil:</p>
+
+<p>Vamos a la barra de Herramientas -> Windows -> Show View -> Servers</p><br>
+<center><img src="http://3.bp.blogspot.com/-05qZGyekGEk/Ua1na0f9M_I/AAAAAAAAAqM/pJx--BplIjw/s1600/03.jpg"></center><br>
+<p>En la parte de nuestras vistas aparecerá lo siguiente!</p><br>
+<center><img src="http://1.bp.blogspot.com/-Ida35OsT1Ug/Ua1n6xcr5lI/AAAAAAAAAqU/V9CkNUd74-Y/s1600/04.jpg"></center><br>
+		</article>
+	</section>
+
+</body>
+</html>
