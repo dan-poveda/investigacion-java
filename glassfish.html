@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Glassfish</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h1><b><center>Instalación y configuración de Glassfish en Eclipse</center></b></h1><br>
+	<marquee>
+	<center> <img src="http://idroot.net/wp-content/uploads/2015/06/glassfish-logo.jpg"></center><br>
+	</marquee>
+	<section>
+		<article>
+			<h3><b>Requisitos necesarios antes de comenzar:</b></h3>
+			<p>1.- Antes de comenzar con la instalación del servidor Glassfish, es necesario tener instalado el jdk, en mi caso estoy utilizando el jdk1.7.0</p><br>
+			<center><img src="http://1.bp.blogspot.com/-uVMDCnIlmas/Vg8io5lU-QI/AAAAAAAAADo/xjg7O4y4OFw/s640/jdk.png"></center><br>
+			<p>2.- Además de tener en nuestra PC, el IDE Eclipse para Java EE Developers (Es muy importante que Eclipse sea para un entorno Web). Si no lo tienen, les dejo el link donde pueden descargar el IDE for Java EE Developers.</p>
+			<p>3.- Descargar el Servidor de Aplicaciones Glassfish (En la imagen se muestra la opión a descargar en caso que estés utilizando un entorno Windows)</p><br>
+			<center><img src="http://4.bp.blogspot.com/-QuaLoG_6EfA/ViGEyAT7kTI/AAAAAAAAAKg/yXVqRUXNAuA/s1600/Descarga%2Bde%2BServidor%2Bde%2BAplicaciones%2BGlassfish.png"></center><br>
+			<h3><b>Comenzando la instalación:</b></h3>
+			<p>Vamos a la carpeta donde se ha descargado el servidor, damos clic derecho en el setup y lo ejecutamos con permisos de administrador.</p>
+			<center><img src="http://1.bp.blogspot.com/-WS1xX4BY8BU/ViGHgun5D7I/AAAAAAAAAKs/W1tbCtnxj3I/s400/Ejecutar%2Bcomo%2Badministrador.png"></center><br>
+			<p>El asistente se iniciará y aparecerán las siguientes pantallas.</p><br>
+			<center><img src="http://3.bp.blogspot.com/-4jHgjLe3DKQ/ViGL_X91QfI/AAAAAAAAALA/oiHkdPmL-Rg/s1600/Imagen1.png"></center><br>
+			<p>La primera pantalla nos da una pequeña introducción sobre el servidor Glassfish, sólo damos clic en Siguiente.</p><br>
+			<center><img src="http://2.bp.blogspot.com/-OvQLVe6uVS4/ViGL_Cp2l_I/AAAAAAAAAK8/kktM2uWu9r4/s1600/Imagen2.png"></center><br>
+			<p> Seleccionamos el tipo de Instalación típica.</p><br>
+			<center><img src="http://4.bp.blogspot.com/-q4iMhw_hxeo/ViGL_t2tNvI/AAAAAAAAALE/-fzjStmub1Q/s1600/Imagen3.png"></center><br>
+			<p> Dejamos que el servidor se instale en el directorio por defecto y damos clic en Siguiente.</p><br>
+			<center><img src="http://1.bp.blogspot.com/-jghKqNhffkE/ViGL_7I4-hI/AAAAAAAAALI/SYWLnv6e2XY/s1600/Imagen4.png"></center><br>
+			<p>Desactivamos la casilla de Instalar Herramienta de Actualización y damos clic en Siguiente.</p><br>
+			<center><img src="http://1.bp.blogspot.com/-FAk0KWOGcwU/ViGMAKM0BuI/AAAAAAAAALg/NDWfClPgyg8/s1600/Imagen5.png"></center><br>
+			<p>Si todo va bien, damos clic en Instalar.</p><br>
+			<center><img src="http://2.bp.blogspot.com/-vmJKlQvzeyU/ViGMAMlHgyI/AAAAAAAAALU/2sfCyZhVtE4/s1600/Imagen6.png"></center><br>
+			<p>Progreso de la instalación.</p><br>
+			<center><img src="http://3.bp.blogspot.com/-AiQoj_BEnIw/ViGMAbVoOOI/AAAAAAAAALY/K_2xPfbhLao/s1600/Imagen7.png"></center><br>
+			<p> En esta ventana lo único que vamos a establecer es la contraseña de nuestro servidor, en este caso será 12345. Puedes poner la que desees, siempre y cuando no se te olvide.</p><br>
+			<center><img src="http://4.bp.blogspot.com/-CjdQBWP_bdA/ViGMBHehsPI/AAAAAAAAALk/_GtnJB5TdoQ/s1600/Imagen8.png"></center><br>
+			<p> Se muestra un resumen de los resultados de la configuración, sólo damos clic en Siguiente.</p><br>
+			<center><img src="http://4.bp.blogspot.com/-OFH-SAPwq_I/ViGMBFWfyCI/AAAAAAAAALo/YbWEQ7Rw6QE/s1600/Imagen9.png"></center><br>
+			<p>Una vez finalizada la instalación, damos clic en Salir.</p><br>
+			<center><img src="http://1.bp.blogspot.com/-6h2X52sBYto/ViGL-x_vMoI/AAAAAAAAAK4/1XZQCf9snb4/s1600/Imagen10.png"></center><br>
+			<h3><b>Configurando Glassfish en Eclipse</b></h3>
+			<p>Muy bien, una vez abierto Eclipse, nos vamos al menu Window > Preferences</p><br>
+			<center><img src="http://2.bp.blogspot.com/-wDivxnYdKL0/Vg8bENZr86I/AAAAAAAAADE/_UlVH70lk5o/s640/Uno.png"></center><br>
+			<p>En la siguiente ventana, damos clic en Server > Runtime Environment y damos clic al botón Add...</p>
+			<center><img src="http://3.bp.blogspot.com/--ThfMfPqM4w/Vg8cPWn8uhI/AAAAAAAAADQ/oO9soA_lFG4/s1600/Dos.png"></center>
+			<p>Ahora damos clic en Download additional server adapter. </p><br>
+			<center><img src="http://2.bp.blogspot.com/-K0koXQ7SmZw/Vg8cPqUH5FI/AAAAAAAAADU/PCLdiAVYW3A/s1600/Tres.png"></center><br>
+			<p>Buscamos Oracle Glassfish Server Tools y damos clic.</p><br>
+			<center><img src="http://3.bp.blogspot.com/-1B6Js1BQGBg/VhCiwcJXsiI/AAAAAAAAAEI/NH5-sPZn3b4/s1600/Cuatro.png"></center><br>
+			<p>Posteriormente, damos clic en Next.</p><br>
+			<center><img src="http://1.bp.blogspot.com/-F6r_Yw0Z5Ww/VhCk2RKPgpI/AAAAAAAAAEU/N1fcQnTbE40/s1600/Cinco.png"></center><br>
+			<p>Aceptamos los términos y damos clic en Finish.</p><br>
+			<center><img src="http://3.bp.blogspot.com/-1qrwzIMS7OU/VhCk3LIYOOI/AAAAAAAAAEk/l6AnyLZE_KQ/s1600/Seis.png"></center><br>
+			<p>Aparecerá una ventana que nos indica que el servidor Oracle Glassfish Server Tools será descargado e instalado, nos avisará cuando la instalación finalice para reiniciar Eclipse. Damos clic en OK.</p><br>
+			<center><img src="http://1.bp.blogspot.com/-TAu8UsCYV9Q/VhCk3SbQCsI/AAAAAAAAAEo/hva8oS_dlTM/s1600/Siete.png"></center><br>
+			<p>En la parte inferior derecha del IDE, se muestra que el servidor se está descargando.</p><br>
+			<center><img src="http://3.bp.blogspot.com/-eexaEb0qvPQ/VhCoorsuzaI/AAAAAAAAAFA/5NmoPOC3j0E/s1600/Imagen1.png"></center><br>
+			<p>Una vez que la instalación haya finalizado, se solicitará que se reinicie Eclipse, damos clic en Restart Now.</p><br>http://3.bp.blogspot.com/-oBp8Ay3SpRI/VhCpNjtiGFI/AAAAAAAAAFI/FF8Tmi1zRKU/s1600/Nueve.png
+			<center><img src="http://3.bp.blogspot.com/-oBp8Ay3SpRI/VhCpNjtiGFI/AAAAAAAAAFI/FF8Tmi1zRKU/s1600/Nueve.png"></center><br>
+			<p>Una vez abierto Eclipse, regresamos a la ventana de configuración del servidor. (Window > Preferences > Server > Runtime Environment > Add...).</p>
+			<p>En la ventana seleccionamos la carpeta Glassfish -  Glassfiss 3.1.2, y en la parte inferior de la ventana damos clic a la casilla Create a new local server y clic en Next.</p><br>
+			<center><img src="http://4.bp.blogspot.com/-4WfjAnzhvsI/VhFlPxwH0II/AAAAAAAAAFY/y8hjAHOoJic/s1600/Diez.png"></center><br>
+			<p>Para configurar el runtime, glassfish requiere que tengamos configurado el jdk para ello seleccionamos el link Installed JRE preferences.</p><br>
+			<center><img src="http://2.bp.blogspot.com/-1S699soeZ1w/VhHCMK3q2vI/AAAAAAAAAGY/4vItDZIwaeM/s1600/Once.png"></center><br>
+			<p>En la siguiente ventana, damos clic en Add...</p><br>
+			<center><img src="http://1.bp.blogspot.com/-mwyfuzq5EgM/VhHCLrTdIZI/AAAAAAAAAGo/F-8Px6R8rNM/s640/Doce.png"></center><br>
+			<p> En la ventana Add JRE seleccionamos la opción Standard VM y damos clic en Next.</p><br>
+			<center><img src="http://4.bp.blogspot.com/-Y_IuTvoR94k/VhHCMtWr5kI/AAAAAAAAAGs/IPCbyqH2WBw/s1600/Trece.png"></center><br>
+			<p>En la ventana siguiente, debemos especificar el directorio del jdk que tenemos instalado, presionamos el botón Directory... y buscamos la ruta, en este caso es C:\Program Files\Java\jdk1.7.0 y clic en Finish.</p><br>
+			<center><img src="http://4.bp.blogspot.com/-Y_IuTvoR94k/VhHCMtWr5kI/AAAAAAAAAGs/IPCbyqH2WBw/s1600/Trece.png"></center>
+			<p>En la ventana siguiente, debemos especificar el directorio del jdk que tenemos instalado, presionamos el botón Directory... y buscamos la ruta, en este caso es C:\Program Files\Java\jdk1.7.0 y clic en Finish.</p>
+			<center><img src="http://2.bp.blogspot.com/-YrVNG7tyxP4/VhHCJ8yx8rI/AAAAAAAAAF0/Htfhg6BwWNY/s1600/Catorce.png"></center><br>
+			<p> Seleccionamos la casila del jdk que hemos agregado y damos clic en OK.</p>
+			<center><img src="http://2.bp.blogspot.com/-6KLwjh5qsXA/VhHCMLZFHyI/AAAAAAAAAGk/VwcCf2gQPaM/s1600/Quince.png"></center><br>
+			<p>En la opción JRE seleccionamos jdk1.7.0, y para la opción Application Server Directory debemos ingresar el path donde esta instalado nuestro glasssfish, en este caso es C:\glassfish3\glassfish y damos clic en Finish.</p><br>
+			<center><img src="http://2.bp.blogspot.com/-x1QtSpWyH64/VhHKvsp8dMI/AAAAAAAAAG4/Q_509RMg8eU/s1600/Dieciseis.png"></center><br>
+			<p>En la siguiente ventana definimos la contraseña que pusimos cuando instalamos el servidor: 12345, y dejamos los valores de domain Directory y Admin name por defecto.</p><br>
+			<center><img src="http://4.bp.blogspot.com/-oDE-j2xyLiM/VhHCLXeikbI/AAAAAAAAAGQ/uCDS3mbu_Ao/s1600/Diecisiete.png"></center><br>
+			<p>En la siguiente ventana, solo damos clic en OK, y listo, hemos configurado nuestro servidor glassfish.</p><br>
+			<center><img src="http://2.bp.blogspot.com/-4sVYpXpCm6c/VhHCJ383LBI/AAAAAAAAAF4/llf4da2ZFm4/s1600/Dieciocho.png"></center><br>
+			<p>Para verificar que funciona nuestro servidor, nos vamos a la pestaña Servers en la parte inferior de Eclipse y para iniciarlo damos clic derecho y seleccionamos Start. </p><br>
+			<center><img src="http://1.bp.blogspot.com/-1nYN2_dnX48/VhHQXpQtBJI/AAAAAAAAAHM/Oj3ybtgIfC4/s640/Start.png"></center><br>
+			<p>El estado cambiará a [Started, Synchronized]</p><br>
+			<center><img src="http://2.bp.blogspot.com/-O2gIJNHgbuY/VhHQY0EuBQI/AAAAAAAAAHY/MaBJGD83-Z0/s1600/Iniciado.png"></center><br>
+			<p>Para realizar alguna configuración del servidor sólo hay que dar doble clic y se despliega una ventana para editar las configuraciones.</p><br>
+			<center><img src="http://3.bp.blogspot.com/-lJ4q4Z54wpc/VhHQYwX4XBI/AAAAAAAAAHc/QJGA0Cqeu9M/s1600/Configuracion.png"></center><br>
+			<p>Puedes verificar que Glassfish haya iniciado, abriendo tu navegador y tecleando localhost:4848 , ingresas el usuario: admin y la contraseña: 12345 (o la que hayas establecido).</p><br>
+			<center><img src="http://2.bp.blogspot.com/-pFx1EY2tzfs/ViGS66e3B5I/AAAAAAAAAMQ/HB67IFmc5N8/s1600/Imagen12.png"></center><br>
+		</article>
+	</section>
+
+</body>
+</html>
